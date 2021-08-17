@@ -12,4 +12,7 @@ public with sharing class Calculator {
         return a*b;
 
     }
+    public integer div(integer a, integer b){
+        return a/b;
+    }
 }
