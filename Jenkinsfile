@@ -37,8 +37,10 @@ node {
 			
 			// need to pull out assigned username
 			if (isUnix()) {
+				println "******************inside if mdapi*******************"
 				rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
+			   println "******************inside else mdapi*******************"
 			   rmsg = bat returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}
 			  
