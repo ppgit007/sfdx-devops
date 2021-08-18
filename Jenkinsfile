@@ -33,6 +33,7 @@ node {
             if (rc != 0) { error 'hub org authorization failed' }
 
 			println rc
+		        println "******************this is befor rc*******************"
 			
 			// need to pull out assigned username
 			if (isUnix()) {
@@ -42,6 +43,7 @@ node {
 			}
 			  
             printf rmsg
+	    printf 'this is my test msg'
             println('Hello from a Job DSL script!')
             println(rmsg)
         }
